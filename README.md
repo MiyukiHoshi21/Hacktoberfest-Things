@@ -1,1 +1,1 @@
-# Hacktoberfest-Things
+Hacktoberfest things by me. 
