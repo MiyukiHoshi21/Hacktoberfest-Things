@@ -383,6 +383,42 @@ while tracker !=1:
   print()
   print()
   
+counter +=1
+tracker = 0
+
+while tracker !=1:
+  
+  print("Q"+str(counter)+") "+ "What is the highest mountain in Europe?")
+  print("   a) Ushba")
+  print("   b) Elbras")
+  print("   c) Mont Blanc")
+  print("   d) Kinabalu")
+  answer = input("Your answer: ")
+  answer = answer.lower()
+  if answer == "a":
+    output = "Wrong"
+    score -=1
+  elif answer == "b":
+    output = "Correct."
+    score +=1
+  elif answer == "c":
+    output = "Wrong. Ty."
+    score -=1
+  elif answer == "d":
+    output = "Yes, that's wrong!"
+    tracker =1
+    score -=1
+  else:
+    output = "Please choose a, b, c or d only."
+
+  print()
+  print(output)
+  print()
+  print("Your current score: " + str(round((score/total_num_of_qn*100),1)) + "%"  )
+  print()
+  print()
+  
+  
   
 
 
